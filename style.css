@@ -1,0 +1,98 @@
+:root {
+  --bg: #f7f7fb;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --brand: #2dd4bf;
+  --brand2: #60a5fa;
+  --card: #ffffff;
+  --shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: .5rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: .9;
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.gallery figcaption {
+  text-align: center;
+  font-size: .9rem;
+  color: var(--muted);
+  margin-top: .5rem;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  margin: .5rem 0;
+}
+
+.links a {
+  color: var(--brand2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: .9rem;
+}
